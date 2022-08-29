@@ -9,15 +9,16 @@ nav ul {
 nav li {
     max-width: 20vw;
     font-size: 16pt;
+    white-space: nowrap;
 }
 
 nav a {
-    color: rgb(165, 106, 30);
+    color: rgb(165, 30, 30);
     transition: ease-in-out 300ms;
 }
 
 nav a:hover {
-    color: rgb(180, 20, 20);
+    color: rgb(245, 60, 60);
 }
 
 #php-styling-guide p {
