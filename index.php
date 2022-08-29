@@ -3,9 +3,26 @@
 
 <head>
     <title>PHP Cheatsheet</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
+
+    <header>
+        <h1>PHP Cheatsheet</h1>
+        <hr />
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.php">Home</a>
+            </li>
+            <li>
+                <a href="./php-styling-guide.php">PHP Styling Guide</a>
+            </li>
+        </ul>
+    </nav>
+
     <?php
 
     # This is a comment
@@ -29,6 +46,11 @@
     * HOWEVER be consistent, personally, to keep it simple, always use snake_case 
     * except for class names which should be PascalCase
     */
+
+    // Use define("CONSTANT_NAME", value) to define constants, then constant("CONSTANT_NAME") to access them
+    define("MY_PI_CONSTANT", 3.14159);
+
+    echo "My Pi Constant: " . constant("MY_PI_CONSTANT") . "<br />";
 
     // Basic Data-Types and variables (note how variables are declared without a type, they're weakly typed and can be reassigned to any type, this should be really scary to a developer...)
 
@@ -195,7 +217,7 @@
         public static $static_property = "Static Property - this is shared across all instances of MyClass";
         private $_private_property;
 
-        // Constructor
+        // Constructor - You can also add parameters to the constructor, but typically the practice is to use setters to set the properties of the class immediately after instantiation
         public function __construct()
         {
             // Executed when the class is instantiated, note the leading dunderscore
