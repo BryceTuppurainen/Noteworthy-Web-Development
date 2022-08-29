@@ -258,6 +258,18 @@
     // We'll likely go more into detail about these in another session, for now, just know that they exist and are used for various things such as $_GET["key"], $_POST["key"] to
     // grab values from the URL request respectively, as well as $_SESSION["key"] to store values in the session, etc.
 
+    // Here's a quick example for you, try adding a=25&b=50 to the end of the URL and see what happens here:
+
+    $a = 0;
+    $b = 0;
+
+    if (array_key_exists("a", $_GET) && array_key_exists("b", $_GET)) {
+        $a = $_GET["a"];
+        $b = $_GET["b"];
+    }
+
+    echo "The sum of $a and $b is " . ($a + $b) . "<br />";
+
     // I also have skipped over reading data from files such as XML and JSON, but you can find out more about that here: https://www.php.net/manual/en/book.simplexml.php
 
     ?>
