@@ -39,3 +39,10 @@ nav a:hover {
     padding: 0;
     font-size: 18pt;
 }
+
+h3 {
+    font-size: 20pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
